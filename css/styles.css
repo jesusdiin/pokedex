@@ -7,3 +7,17 @@
     margin: 0;
 }
 
+.bg {
+    height: 100vh;
+    background-image: url('https://images7.alphacoders.com/662/662102.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+/* 
+#cardId {
+    height: 1%;
+} */
+
+.avatarImg {
+    height: 185px;
+}

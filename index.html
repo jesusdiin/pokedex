@@ -8,21 +8,86 @@
 	<title>Pokedex</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<meta name="theme-color" content="#66B0DA">
 </head>
 
 <body>
-	<nav class='navbar navbar-dark bg-dark'>
+
+	<div class="bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-5 row" id="group1">
+				</div>
+				<div class="col-sm-12 col-md-2">
+					<div class='col-sm-12 col-md-12 col-lg-12 row'>
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="" srcset="">
+					</div>
+					<div class='col-sm-12 col-md-12 col-lg-12 row'>
+						<h1>
+							VS
+						</h1>
+					</div>
+					<div class='col-sm-12 col-md-12 col-lg-12 row'>
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="" srcset="">
+					</div>
+					<div class='col-sm-12 col-md-12 col-lg-12 row'>
+						<a class="btn btn-danger" href="#">Lucha</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-5 row" id="group2">
+
+				</div>
+			</div>
+		</div>
+	<!-- <nav class='navbar navbar-dark bg-dark'>
 		<div class='container'>
 			<a class='navbar-brand' href='/'>Pokedex</a>
 		</div>
-	</nav>
-	<div id="root">
-		<div class="row" id="cardsDiv">
+	</nav> -->
+		<!-- <div id="root">
+			<div class="row" id="cardsDiv">
 
-		</div>
+			</div>
 
+
+		</div> -->
 	</div>
+
+
+	<div class="toast-container position-fixed top-0 end-0 p-3">
+		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+
+				<span class="top-5 translate-middle p-2 bg-danger border border-light rounded-circle">
+					<span class="visually-hidden">New alerts</span>
+				</span>
+				
+				<strong class="me-auto">Pokedex</strong>
+				<small>Reciente</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				Presiona F11 para entrar en pantalla completa
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		const acti = () => {
+				const toast = new bootstrap.Toast(liveToast)
+
+				toast.show()
+		}
+
+		acti()
+
+
+
+	</script>
+
+
 	<script src="js/script.js"></script>
 </body>
 
